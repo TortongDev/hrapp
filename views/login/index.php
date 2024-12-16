@@ -53,11 +53,24 @@
     <header class="login">
         <div class="header-login-title">Login :: เข้าใช้งาน</div>
     </header>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-3">Lorem, ipsum.</div>
-            <div class="col-12 col-md-6">Lorem, ipsum dolor.</div>
-            <div class="col-12 col-md-3">Lorem ipsum dolor sit amet.</div>
+    <div class="container mt-5">
+        <div class="row mt-3">
+            <div class="col-12 col-md-3"></div>
+            <div class="col-12 col-md-6">
+                <div class="mt-3">
+                    <label for="username">Username</label><br>
+                    <input type="text" name="username" id="username" class="form-control">
+                </div>
+                <div class="mt-3">
+                    <label for="password">Password</label><br>
+                    <input type="text" name="password" id="password" class="form-control">
+                </div>
+                <div class="mt-3">
+                    <button type="submit p-1" class="btn btn-primary">Login</button>
+                    <button type="reset" class="btn btn-warning">Reset</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-3"></div>
         </div>
     </div>
 </body>
