@@ -6,7 +6,7 @@ $router->map( 'GET', '/', function() {
 	require __DIR__."/views/home/index.php";
 });
 $router->map( 'GET', '/login', function() {
-	require __DIR__."/views/login/index.php";
+	require __DIR__."/views/home/index.php";
 });
 $match = $router->match();
 if( is_array($match) && is_callable( $match['target'] ) ) {
