@@ -5,6 +5,9 @@ $router = new AltoRouter();
 $router->map( 'GET', '/', function() {
 	require __DIR__."/views/home/index.php";
 });
+$router->map( 'GET', '/login', function() {
+	require __DIR__."/views/login/index.php";
+});
 $match = $router->match();
 if( is_array($match) && is_callable( $match['target'] ) ) {
 	call_user_func_array( $match['target'], $match['params'] );
