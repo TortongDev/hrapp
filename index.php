@@ -2,7 +2,7 @@
 require_once "./vendor/autoload.php";
 $router = new AltoRouter();
 //$router->setBasePath('/tortongdevbus/');
-$router->map( 'GET', '/', function() {
+$router->map( 'GET', '/home', function() {
 	require __DIR__."/views/home/index.php";
 });
 $router->map( 'GET', '/login', function() {
