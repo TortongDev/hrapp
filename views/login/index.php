@@ -54,7 +54,11 @@
         <div class="header-login-title">Login :: เข้าใช้งาน</div>
     </header>
     <div class="container">
-
+        <div class="row">
+            <div class="col-12 col-md-3">Lorem, ipsum.</div>
+            <div class="col-12 col-md-6">Lorem, ipsum dolor.</div>
+            <div class="col-12 col-md-3">Lorem ipsum dolor sit amet.</div>
+        </div>
     </div>
 </body>
 </html>
