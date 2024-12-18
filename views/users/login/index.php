@@ -1,3 +1,12 @@
+<?php
+session_start();
+include dirname(dirname(__DIR__))."/services/config/csrf_form.php";
+
+
+
+exit;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,9 +63,10 @@
         <div class="header-login-title">Login :: เข้าใช้งาน</div>
     </header>
     <div class="container mt-5 pt-5">
-        <div class="row mt-3">
+        <div class="row mt-3 bg-light">
             <div class="col-12 col-md-3"></div>
             <div class="col-12 col-md-6">
+				<input type="hidden" name="csrf_token" value="<?=$_SESSION['CSRF_TOKEN']?>">
                 <div class="mt-3">
                     <label for="username">Username</label><br>
                     <input type="text" name="username" id="username" class="form-control">

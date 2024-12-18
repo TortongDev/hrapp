@@ -1,0 +1,4 @@
+create table ui_lang (ui_lang_id int(10) primary key auto_increment, ui_lang_th varchar(255), ui_lang_en varchar(255), ui_lang_th_text text, ui_lang_th_text text);
+
+
+

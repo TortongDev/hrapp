@@ -1,9 +1,6 @@
 <?php
 	session_start();
 	require_once dirname(dirname(__DIR__))."/config/Connection.php";
-	if(!empty($_SESSION['CSRF_TOKEN'])){
-		$csrf_token = $_SESSION['CSRF_TOKEN'];
-	}
 	$db = Connection::getInstance();
 	$username = isset($_POST['username']) ? filter_var($_POST['username'], FILTER_SANITIZE_FULL_SPECIAL_CHARS) : '';
 	$password = isset($_POST['password']) ? filter_var($_POST['password'], FILTER_SANITIZE_FULL_SPECIAL_CHARS) : '';
